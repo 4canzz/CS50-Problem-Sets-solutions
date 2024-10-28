@@ -1,3 +1,15 @@
+#include <ctype.h>
+#include <cs50.h>
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+    //starting work on problem set 2 soon
+    return 0;
+}
+
+
 /*So what sorts of traits are characteristic of higher reading levels? Well, longer words probably correlate with higher reading
  levels. Likewise, longer sentences probably correlate with higher reading levels, too.
 
