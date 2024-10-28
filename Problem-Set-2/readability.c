@@ -5,7 +5,7 @@
 #include <string.h>
 
 int main(void){
-    //starting work on problem set 2 soon
+    //starting work on problem 2 soon
     return 0;
 }
 
