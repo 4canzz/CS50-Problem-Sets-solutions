@@ -1,12 +1,58 @@
 #include <ctype.h>
-#include <cs50.h>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
 
-int main(void){
-    //starting work on problem 2 soon
-    return 0;
+int main()
+{
+    char buffer[100000];
+    printf("Text: \n");
+    scanf("%[^\n]%*c", buffer);
+
+    int letters = 0;
+    int words = 0;
+    int sentences = 0;
+    int arraySize = strlen(buffer);
+    for (int i = 0; i < arraySize; i++)
+    {
+        // letters = count_letters(text);
+        if (isalpha(buffer[i]))
+        {
+            letters++;
+        }
+        // words = count_words(text);
+        if (buffer[i] == ' ')
+        {
+            words++;
+        }
+        // sentences = count_sentences(text);
+        if (buffer[i] == '.' || buffer[i] == '!' || buffer[i] == '?')
+        {
+            sentences++;
+        }
+    }
+
+    words++;
+
+    double L = ((double) letters / (double) words) * 100;
+    printf("L is %f\n", L);
+    double S = ((double) sentences / (double) words) * 100;
+    printf("S is %f\n", S);
+    double index = (0.0588 * L) - (0.296 * S) - 15.8;
+    printf("index is %f\n", index);
+
+    if ((int) index <= 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else if ((int) index > 16)
+    {
+        printf("Grade 16+\n");
+    }
+    else
+    {
+        printf("%s%i\n", "Grade ", (int) round(index));
+    }
 }
 
 
