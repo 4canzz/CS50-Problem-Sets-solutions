@@ -1,0 +1,15 @@
+"This only includes the answers, not the analysis or full explanation. It's recommended to first analyze the algorithms yourself
+by using the time command line tool. Use it to measure how long each algorithm takes as the number of numbers increases in each
+file. Then, compare the results with the corresponding Big O and Big Omega notations.
+
+sort1 uses: bubble
+
+How do you know?: by estimating and graphing by using time command. Big Omega shows to be roughly n.
+
+sort2 uses: merge
+
+How do you know?: by estimating and graphing using time command. Big Omega shows to be roughly n*log(n).
+
+sort3 uses: selection
+
+How do you know?: by estimating and graphing using time command. Big Omega shows to be roughly n^2.
