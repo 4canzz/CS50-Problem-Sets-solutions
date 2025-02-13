@@ -35,9 +35,9 @@ int main()
     words++;
 
     double L = ((double) letters / (double) words) * 100;
-    printf("L is %f\n", L);
+    //printf("L is %f\n", L);
     double S = ((double) sentences / (double) words) * 100;
-    printf("S is %f\n", S);
+    //printf("S is %f\n", S);
     double index = (0.0588 * L) - (0.296 * S) - 15.8;
     printf("index is %f\n", index);
 
